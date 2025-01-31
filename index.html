@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Envelope Section -->
+        <div id="envelope" class="envelope" onclick="openEnvelope()">
+            <img src="envelope.png" alt="Envelope" />
+        </div>
+
+        <!-- Valentine Card Section -->
+        <div id="card" class="card hidden">
+            <p>Will you be my Valentine, Imani?</p>
+            <button onclick="response('yes')">Yes</button>
+            <button onclick="response('no')">No</button>
+        </div>
+
+        <!-- Sad Animal Section (initially hidden) -->
+        <div id="sadAnimal" class="hidden">
+            <img src="sad-puppy.jpg" alt="Sad Puppy" />
+            <p>Why?</p>
+        </div>
+
+        <!-- Final Message Section (initially hidden) -->
+        <div id="finalMessage" class="hidden">
+            <p>Thank you for being my Valentine, I LOVE YOU!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
